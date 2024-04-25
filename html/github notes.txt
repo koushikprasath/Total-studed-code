@@ -1,0 +1,63 @@
+github
+git is a verion control system
+
+Command Prompt:
+	git config --global user.name"git user name"
+	git config --global user.email"mail id"
+
+Visual Studio Terminal:
+
+  folder name:githtml1         U-->Untracked file   A-->Stagging area  M-->Modified
+  file name:test1.txt
+
+	git clone _git link_            -->open github -->open folder -->open file and copy link in code icon
+	cd githlml1                          -->to open that folder in file
+	git status                           -->to check status in github
+	git add test2.txt                   -->to add the file from visual studio to staging area(local file)
+	git commit -m "test2.txt file added" -->to add the file from stagging area to local git
+              (must write any commit)
+	git push origin main                 -->to push the file to github
+
+Ex:Any Modification(Insert)-->Add-->Commit-->Push
+
+Delete the test2.txt:(move to recycle bin in VS)
+	git add test2.txt                    -->come to stagging area
+	git commit -m"deleted test2.txt file"
+	git push origin main 
+
+New file added in git(to VS)
+	git pull                              -->changes updated in VS
+
+VS to git:
+
+  local file-->githtml2
+  file name:index.html
+
+	cd..                                  -->come to back folder
+	cd githtml2                           -->come to second folder
+	git init                              -->empty git rep
+
+create rep in github (folder name:githtml2): 
+
+	git remote add origin (copy the ssh link and paste)
+	git branch                            -->show the branch(master)
+	git branch -m main                    -->to change the branch name(master to main)
+	git add .                             -->it use to put many modified into stagging area 
+	git commit -m"(must write any commit)"
+	git push origin main
+
+Branch:
+	git branch -a                         -->to show the branch's list
+	git checkout _branch name_            -->go to another branch
+	git diff                              -->show the different in main branch and subbranch
+	git merge                             -->merge both file and push to show
+        git push orgin main
+(if it struck press q to type)
+	git branch _branch name_              -->to create branch in VS
+	
+PULL REQUEST:
+	
+open pull request-->new PR-->Select new branch-->click create (PR)-->command to known adout it-->click (PR)
+
+Conflict:
+	You can only resolve merge conflicts on GitHub that are caused by competing line changes, such as when people make different changes to the same line of the same file on different branches in your Git repository.   
